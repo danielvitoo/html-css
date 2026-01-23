@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Syne+Mono&display=swap');
+
+        body {
+            font-family:"Syne Mono", monospace;
+            background-color: cadetblue;
+        }
+
+        header {
+            background-color: rgb(173, 194, 194);
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        main {
+            background-color: rgb(173, 194, 194);
+            color: black; 
+            padding: 10px; 
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 10px 7px 20px 0px black;
+        }
+
+        footer {
+            background-color: black;
+            color: rgb(173, 194, 194);
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        article {
+            background-color: rgb(235, 231, 231);
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        article > aside {
+            background-color: rgb(105, 105, 105);
+        }
+        
+        nav {
+            background-color: black;
+            padding: 4px;
+            box-shadow: 14px 5px 20px 0px black;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            margin-right: 25px;
+        }
+        nav > a:hover {
+            text-decoration: underline ;
+            color: rgb(255, 255, 255)
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Meu Site </h1>
+
+        <nav>
+            <a href="#"> links</a>
+            <a href="#"> links</a>
+            <a href="#"> links</a>
+            <a href="#"> links</a>
+            <a href="#"> links</a>
+        </nav>
+    </header>
+
+    <main>
+    <section id="assuntos">
+        ESPORTES POLITÍCA TECNOLOGIA
+    </section>
+    
+    <section id="noticias"> 
+        <article>
+            <h2> Noticias sobre o Brasil</h2>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam ex ea placeat autem cupiditate corporis maiores eaque magni odit nostrum blanditiis ullam excepturi facilis vitae et molestias exercitationem, quis maxime?</p>
+
+            <aside>
+                <p>Artigo escrito por Rayssa Virturino</p>
+            </aside>
+        </article>         
+    </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Daniel Vitor</p>
+    </footer>
+
+</body>
+</html>
