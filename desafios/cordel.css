@@ -39,6 +39,7 @@ section {
     padding-left: 30px;
     line-height: 3em;
     font-family: var(--fonte3);
+    font-size: 2.5vh;
 }
 
 section.normal {
@@ -51,15 +52,15 @@ section.verso1 {
     background-image: url(imagens/background001.jpg);
     background-color: rgba(38, 0, 252, 0.253);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 600px;
-    
+    background-attachment: fixed;
+    background-position: right center;
 }
 
 section.verso1 > p, section.verso2 > p {
     background-color: rgba(0, 0, 0, 0.39);
     width: 400px;
+    transform: translate(0% 20%);
+    
 }
 
 section.verso2 {
@@ -67,9 +68,12 @@ section.verso2 {
     background-image: url(imagens/background002.jpg);
     background-color: blue;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 600px;
+    background-attachment: fixed;
+    background-position: right center;   
+}
+
+section.verso1, section.verso2 {
+    box-shadow: inset 6px 6px 10px 0px black;
 }
 
 footer {
