@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulári</title>
+</head>
+<body>
+    <form action="" method="get">
+       <p>
+        <label for="iest">Estado:</label>
+        <select name="est" id="iest">
+
+            <option value="">--- Escolher ---</option>
+            <optgroup label="REGIÃO NORDESTE">
+                 <option value="PB">Paraiba</option>
+                 <option value="RN">Rio Grande Do Norte</option>
+                 <option value="PE">Pernambuco</option>
+            </optgroup>
+           
+
+            <optgroup label="REGIÃO SUDESTE">
+                 <option value="SP">São Paulo</option>
+                 <option value="MG">Minas Gerais</option>
+            </optgroup>
+            
+        </select>
+       </p>
+       
+       <p>
+        <label for="iprof">Profissão:</label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+
+        <datalist id="lstprof">
+            <option>Administrador</option>
+            <option>Eletricista</option>
+            <option>Instrumentação</option>
+        </datalist>
+       </p>
+
+       <p>
+        <label for="imsg">Mensagem:</label> <br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+       </p>
+
+       <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+       </p>
+
+    </form>
+</body>
+</html>
